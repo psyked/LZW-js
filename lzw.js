@@ -1,4 +1,4 @@
-var lzw = window.lzw || {
+var LZW = window.LZW || {
     encode: function encode(s) {
         var dict = {};
         var data = (s + "").split("");
@@ -50,4 +50,4 @@ var lzw = window.lzw || {
         return out.join("");
     }
 };
-window['lzw'] = lzw;
+window['LZW'] = LZW;
