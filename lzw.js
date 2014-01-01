@@ -22,7 +22,7 @@
  * Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301
  * USA
  *
- * @type {LZW|*|{encode: encode, decode: decode}}
+ * @type {LZW|*|{encode: encode, encodeObject: encodeObject, decode: decode, decodeObject: decodeObject}}
  */
 var LZW = window.LZW || {
     encode: function encode(s) {
@@ -51,6 +51,10 @@ var LZW = window.LZW || {
         }
         return out.join("");
     },
+    encodeObject: function encodeObject(obj) {
+        var encodedObject = JSON.encode(obj);
+        return this.encode(encodedObject);
+    },
     decode: function decode(s) {
         var dict = {};
         var data = (s + "").split("");
@@ -74,6 +78,10 @@ var LZW = window.LZW || {
             oldPhrase = phrase;
         }
         return out.join("");
+    },
+    decodeObject: function decodeObject(str) {
+        var decodedString = this.decode(str);
+        return JSON.decode(decodedString);
     }
 };
 window['LZW'] = LZW;

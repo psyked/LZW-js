@@ -32,6 +32,22 @@ Input: **String**
 
 Output: **String**
 
+### LZW.encodeObject
+
+Takes a raw JavaScript object, stringifies it with JSON and then compresses the string with LZW.
+
+Input: **Object**
+
+Output: **String**
+
+### LZW.decodeObject
+
+Takes a LZW-encoded JSON object, decodes it to JSON and then further decodes that into a raw JavaScript object.
+
+Input: **String**
+
+Output: **Object**
+
 Credits
 -------
 
