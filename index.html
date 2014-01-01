@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Lzw-js by psyked</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>Lzw-js</h1>
+        <p></p>
+
+        <p class="view"><a href="https://github.com/psyked/LZW-js">View the Project on GitHub <small>psyked/LZW-js</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/psyked/LZW-js/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/psyked/LZW-js/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/psyked/LZW-js">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a name="lzwjs" class="anchor" href="#lzwjs"><span class="octicon octicon-link"></span></a>LZW.js</h1>
+
+<p><strong>LZW encoding and decoding of Strings in JavaScript</strong></p>
+
+<p>From <a href="http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch">Wikipedia</a>:</p>
+
+<blockquote>
+<p><strong>Lempel–Ziv–Welch (LZW)</strong> is a universal lossless data compression algorithm created by <em>Abraham Lempel</em>, <em>Jacob Ziv</em>,
+and <em>Terry Welch</em>. It was published by Welch in 1984 as an improved implementation of the LZ78 algorithm published by
+Lempel and Ziv in 1978. The algorithm is simple to implement, and has the potential for very high throughput in hardware
+implementations. It was the algorithm of the widely used Unix file compression utility compress, and is used in the GIF
+image format.</p>
+
+<p><a href="http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch">http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch</a></p>
+</blockquote>
+
+<h2>
+<a name="methods" class="anchor" href="#methods"><span class="octicon octicon-link"></span></a>Methods</h2>
+
+<h3>
+<a name="lzwencodestring" class="anchor" href="#lzwencodestring"><span class="octicon octicon-link"></span></a>LZW.encode(string)</h3>
+
+<p>Takes an input string, compresses it using LZW and returns the compressed string.</p>
+
+<p>Input: <strong>String</strong></p>
+
+<p>Output: <strong>String</strong></p>
+
+<h3>
+<a name="lzwdecode" class="anchor" href="#lzwdecode"><span class="octicon octicon-link"></span></a>LZW.decode</h3>
+
+<p>Takes a LZW-encoded string, decompresses it and returns the original, uncompressed string.</p>
+
+<p>Input: <strong>String</strong></p>
+
+<p>Output: <strong>String</strong></p>
+
+<h3>
+<a name="lzwencodeobject" class="anchor" href="#lzwencodeobject"><span class="octicon octicon-link"></span></a>LZW.encodeObject</h3>
+
+<p>Takes a raw JavaScript object, stringifies it with JSON and then compresses the string with LZW.</p>
+
+<p>Input: <strong>Object</strong></p>
+
+<p>Output: <strong>String</strong></p>
+
+<h3>
+<a name="lzwdecodeobject" class="anchor" href="#lzwdecodeobject"><span class="octicon octicon-link"></span></a>LZW.decodeObject</h3>
+
+<p>Takes a LZW-encoded JSON object, decodes it to JSON and then further decodes that into a raw JavaScript object.</p>
+
+<p>Input: <strong>String</strong></p>
+
+<p>Output: <strong>Object</strong></p>
+
+<h2>
+<a name="credits" class="anchor" href="#credits"><span class="octicon octicon-link"></span></a>Credits</h2>
+
+<ul>
+<li>Original encode / decode functions provided by <a href="http://stackoverflow.com/users/2214/matthew-crumley">Matthew Crumley</a> in a <a href="http://stackoverflow.com/questions/294297/javascript-implementation-of-gzip">StackOverflow post.</a>
+</li>
+</ul>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/psyked">psyked</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
