@@ -1,7 +1,7 @@
 LZW.js
 ======
 
-** LZW encoding and decoding of Strings in JavaScript **
+**LZW encoding and decoding of Strings in JavaScript**
 
 From [Wikipedia](http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch):
 
