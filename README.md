@@ -13,6 +13,10 @@ From [Wikipedia](http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch):
 >
 > <cite>http://en.wikipedia.org/wiki/Lempel%E2%80%93Ziv%E2%80%93Welch</cite>
 
+Important Note:
+---------------
+This package does not work with strings containing Unicode characters (i.e. characters which require two bytes to represent them). [See issue #1](https://github.com/psyked/LZW-js/issues/1)
+
 Methods
 -------
 
